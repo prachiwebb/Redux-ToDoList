@@ -28,8 +28,6 @@ const TodoList = () => {
           <i
             className='fa fa-plus add-btn'
             onClick={() => {
-              //   e.stopPropagation();
-
               dispatch(addTodo(inputData), setInputData(''));
             }}
           ></i>

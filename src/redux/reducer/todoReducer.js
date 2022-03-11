@@ -18,8 +18,6 @@ const todoReducer = (state = initialState, action) => {
         ],
       };
     case 'Delete_Todo':
-      // y filter kar raha h jo elem.id action.id k equal nii haii usko return kardo
-      // or jo equal haii use filter kardo mtlbb remove kardo
       const newList = state.list.filter((elem) => elem.id !== action.id);
       return {
         ...state,
